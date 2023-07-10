@@ -1,0 +1,14 @@
+#!/system/bin/sh
+dir="$(cd "$(dirname "$0")"; pwd)";
+
+export HOME=$dir;
+export LD_LIBRARY_PATH=$dir/lib;
+export TERM=xterm-256color;
+
+export TERMINFO=$dir/terminfo
+
+export TERM=xterm-256color
+
+echo $LD_LIBRARY_PATH
+echo $TERM
+$dir/screen.bin "$@";
