@@ -12,7 +12,7 @@ and moreee .. (https://linuxize.com/post/how-to-use-linux-screen/).
 
 ## instalation (bahasa indonesia)
 1. download repo ini dalam format zip.
-`https://github.com/ibnusaja/termux-screen/archive/refs/heads/master.zip`
+`curl -O -L https://github.com/ibnusaja/termux-screen/archive/refs/heads/master.zip`
 2. unzip zip tersebut `unzip -x master.zip`
 3. ubah permisssion semuanya ke 700 `chmod -R 700 ./scruun`
 4. jalankan `screen -ls` dan juga `screen -R` untuk pengetesan.
