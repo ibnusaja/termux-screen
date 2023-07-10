@@ -2,7 +2,7 @@
 this repo for install screen to any terminal in android without root needed. 
 fork from termux offcial App
 
-# USAGE
+## USAGE
 1. `screen -R term1` = for new terminal with name "term1".
 2. `screen -r term1` = load screen with name "term1".
 3. `screen -ls` = list screen terminal activate.
@@ -10,7 +10,7 @@ fork from termux offcial App
 
 and moreee .. (https://linuxize.com/post/how-to-use-linux-screen/).
 
-# instalation (bahasa indonesia)
+## instalation (bahasa indonesia)
 1. download repo ini dalam format zip.
 `https://github.com/ibnusaja/termux-screen/archive/refs/heads/master.zip`
 2. unzip zip tersebut `unzip -x master.zip`
