@@ -2,11 +2,11 @@
 dir="$(cd "$(dirname "$0")"; pwd)";
 
 if [[ "$(id -u)" != "0" ]];then
- echo "root mode"
- export HOME=$dir/suroot;
-else
  echo "no root mode"
  export HOME=$dir;
+else
+ echo "root mode"
+ export HOME=$dir/suroot;
 fi
 
 # export HOME=$dir;
