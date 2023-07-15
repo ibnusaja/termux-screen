@@ -1,7 +1,15 @@
 #!/system/bin/sh
 dir="$(cd "$(dirname "$0")"; pwd)";
 
-export HOME=$dir;
+if [[ "$(id -u)" != "0" ]];then
+ echo "root mode"
+ export HOME=$dir/suroot;
+else
+ echo "no root mode"
+ export HOME=$dir;
+fi
+
+# export HOME=$dir;
 export LD_LIBRARY_PATH=$dir/lib;
 export TERM=xterm-256color;
 export TERMINFO=$dir/terminfo
@@ -9,4 +17,5 @@ export TERM=xterm-256color;
 
 echo $LD_LIBRARY_PATH
 echo $TERM
+echo $HOME
 $dir/screen.bin "$@";
